@@ -28,7 +28,7 @@
         name:
           - java-1.17.0-openjdk
         state: latest
-      when: ansible_distribution == 'CentOS' or ansible_distribution == 'Red Hat Enterprise Linux'
+      when: ansible_distribution == 'CentOS' or ansible_distribution == 'Red Hat Enterprise Linux' or ansible_distribution == 'OracleLinux'
 
 - hosts: "all"
   vars:
